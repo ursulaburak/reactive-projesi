@@ -1,0 +1,118 @@
+#trainers {
+    background-color: var(--background-color-2);
+    padding: 2rem 0;
+  }
+  
+  .trainers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .our-trainer {
+    text-align: center;
+    margin: 10px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .our-trainer:before,
+  .our-trainer:after {
+    content: "";
+    width: 100%;
+    height: 103%;
+    background: var(--background-color-3);
+    position: absolute;
+    top: 49.5%;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%) scaleX(0.3);
+    transition: all 0.3s ease 0s;
+  }
+  
+  .our-trainer:after {
+    width: 106%;
+    left: 51%;
+    transform: translate(-50%, -50%) scaleY(0.25);
+  }
+  
+  .our-trainer:hover:before {
+    transform: translateY(-50%) scaleX(0.7);
+  }
+  
+  .our-trainer:hover:after {
+    transform: translate(-50%, -50%) scaleY(0.7);
+  }
+  
+  .our-trainer img {
+    width: 100%;
+    height: auto;
+    border: 3px solid var(--background-color-4);
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .trainer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .our-trainer .trainer-content {
+    width: 90%;
+    padding: 20px 0 10px;
+    background: var(--background-color-3);
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    opacity: 0;
+    clip-path: polygon(
+      0% 15%,
+      15% 15%,
+      15% 0%,
+      85% 0%,
+      85% 15%,
+      100% 15%,
+      100% 85%,
+      85% 85%,
+      85% 100%,
+      15% 100%,
+      15% 85%,
+      0% 85%
+    );
+    transform: translateX(-50%);
+    transition: all 0.3s cubic-bezier(0.5, 0.2, 0.1, 0.9);
+  }
+  
+  .our-trainer:hover .trainer-content {
+    bottom: 10px;
+    opacity: 1;
+  }
+  
+  .our-trainer .title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--background-color-1);
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  .our-trainer .post {
+    display: block;
+    font-size: 16px;
+    color: var(--background-color-1);
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Evaluation Form 7 */
+  @media (max-width: 576px) {
+    .our-trainer {
+      margin-bottom: 30px;
+    }
+    .our-trainer img {
+      width: 98%;
+    }
+    .our-trainer:after {
+      width: 104%;
+      left: 50%;
+    }
+  }
+  

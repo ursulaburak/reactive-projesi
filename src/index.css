@@ -1,0 +1,13 @@
+@import './App.css';
+
+@import './components/Header/header.style.css';
+@import './components/Footer/footer.style.css';
+
+@import './components/Hero/hero.style.css';
+@import './components/Stats/stats.style.css';
+@import './components/Class/class.style.css';
+@import './components/Bmi/bmi.style.css';
+@import './components/Trainers/trainers.style.css';
+@import './components/Purchase/purchase.style.css';
+@import './components/Review/review.style.css';
+@import './components/Contact/contact.style.css';

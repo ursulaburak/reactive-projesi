@@ -1,0 +1,111 @@
+#bmi {
+    padding: 50px 0;
+  }
+  
+  .bmi-calculator-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: auto;
+  }
+  
+  .bmi-info {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 5rem;
+  }
+  
+  .bmi-info h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--font-color-3);
+  }
+  
+  .bmi-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .bmi-inputs {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .bmi-inputs input {
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .bmi-image h2 {
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  
+  .bmi-arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid orange;
+    position: absolute;
+    bottom: -20px;
+    left: 50%; /* Start position  */
+    transform: translateX(-50%);
+    transition: left 0.5s ease;
+  }
+  
+  .bmi-chart-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .bmi-chart {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Evaluation Form 7 */
+  @media (max-width: 576px) {
+    .bmi-calculator-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+    .bmi-info {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    .bmi-info p {
+      text-align: justify;
+      font-size: 16px;
+    }
+    .bmi-inputs {
+      display: grid;
+      padding: 0;
+    }
+    .bmi-image {
+      padding-top: 10px;
+    }
+    .bmi-image img {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin: 0;
+    }
+    .bmi-image h2 {
+      padding-top: 10px;
+      text-align: center;
+    }
+  }
+  

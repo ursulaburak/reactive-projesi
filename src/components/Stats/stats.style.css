@@ -1,0 +1,57 @@
+#stats {
+    background-color: var(--background-color-2);
+    padding: 2rem 0;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sütun 1 boşluk muydu?  */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .stats-item {
+    text-align: center;
+    background-color: var(--background-color-1);
+    padding: 1rem;
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .stats-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .stats-item h2 {
+    font-size: 36px;
+    color: #4169e1;
+  }
+  
+  .stats-item:hover h2 {
+    color: #ff6347;
+  }
+  
+  .stats-item p {
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 1rem 0;
+  }
+  
+  .counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  /* Responsive Evaluation Form 7 */
+  @media (max-width: 576px) {
+    .stats-grid {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 3rem;
+    }
+  }
+  
