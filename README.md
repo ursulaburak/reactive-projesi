@@ -1,55 +1,58 @@
-# Reactive-projesi
+## Reactive Project
 
-Geliştirdiğimiz "Sport Center" projemizi React'ta uygun bir şekilde güncelledik. Her section ayrı bir component olarak düzenlendi.
-Her component içeriği (component.jsx, component.style.css ve index.js) olarak düzenlendi. App.css dosysası düzenlendi ve tüm css dosyalara index.css dosyasından import edildi.
+We have updated our "Sport Center" project using React with a proper structure. Each section has been organized as a separate component.
+Each component includes its own structure: component.jsx, component.style.css, and index.js.
+The App.css file has been restructured, and all CSS files are imported through index.css.
 
-## Canlı Demo
-Projenin canlı versiyonunu görmek için [buraya tıklayın](https://reactive-sportcenter.netlify.app).
+## Live Demo
 
-## Özellikler
+Click here to view the live version of the project.
+[buraya tıklayın](https://reactive-sportcenter.netlify.app).
 
-- **React**: Proje, bileşen tabanlı bir mimari kullanarak React ile geliştirilmiştir.
-- **Vite**: Projenin hızlı bir geliştirme süreci ve optimizasyonu için Vite kullanılmıştır.
-- **Duyarlı Tasarım**: Projede istenen 576px (mobil) duyarlı (responsive) bir yapıya sahiptir.
-- **Sabit Navigasyon Çubuğu**: Sabit başlık kısmı ile menüler arasında yumuşak geçiş sağlar.
-- **Sekme Gezinimi**: Sınıflar bölümünde sekmeler aracılığıyla farklı sınıf içeriklerine erişim sağlar.
-- **BMI Hesaplayıcı**: Gerçek zamanlı sonuçlar ve BMI değerine göre görsel geri bildirim sunan bir BMI hesaplayıcı içerir.
-- **CSS**: Projeye özgü bir görünüm kazandırmak için sadece CSS kullanılmıştır. İstenildiği gibi ek bir CSS kütüphanesi kullanılmamıştır.
-- **Mobil Menü**: Mobil görünümde bir hamburger menüsü ile açılıp kapanan menü.
-- **Scroll Tabanlı Header**: Sayfa aşağı kaydırıldığında başlık (header) arka plan rengi değiştirir.
+## Features
 
-## Bölümler
+- **React**: The project was built using a component-based architecture in React.
+- **Vite**: Vite was used for a fast development environment and optimized performance.
+- **Responsive Design**: The project is responsive and optimized for 576px (mobile) screens.
+- **Sticky Navigation Bar**: A fixed header enables smooth navigation between sections.
+- **Tabbed Navigation**: The "Classes" section allows users to switch between different classes via tabs.
+- **BMI Calculator**: A real-time BMI calculator that provides visual feedback based on the calculated BMI value.
+- **CSS**: Pure CSS was used for styling; no external CSS libraries were implemented.
+- **Mobil Menu**: A hamburger menu appears in mobile view for easy navigation.
+- **Scroll-Based Header**: The header background color changes when the user scrolls down the page.
 
-1. **Ana Sayfa (Home)**
-   - Slider/Banner görseli ve harekete geçirici mesaj (CTA) butonları içerir.
+## Sections
+
+1. **Home**
+   - Includes a banner/slider with call-to-action (CTA) buttons.
    
-2. **Sınıflar (Classes)**
-   - Yoga, Grup Sınıfları ve Solo Sınıflar gibi farklı sınıf seçeneklerini sekmeler ile gösterir.
+2. **Classes**
+   - Displays various class types like Yoga, Group Classes, and Solo Sessions using tab navigation.
 
-3. **BMI Hesaplayıcı**
-   - Kullanıcılar boy ve kilolarını girerek BMI'lerini hesaplayabilir. Sonuçlar anında gösterilir ve BMI kategorisine göre sınıflandırılır (Zayıf, Normal, Fazla Kilolu vb.).
+3. **BMI Calculator**
+   - Users can enter their height and weight to calculate their BMI. Results are displayed instantly and categorized (Underweight, Normal, Overweight, etc.).
 
-4. **Eğitmenler (Trainers)**
-   - Fitness eğitmenleri hakkında bilgiler gösterir.
+4. **Trainers**
+   - Showcases fitness trainers with detailed information.
 
-5. **Ürünler (Purchase)**
-   - Fitness ürünleri ile ilgili satılan ürünleri gösterir.
+5. **Purchase**
+   - Displays fitness-related products available for purchase.
 
-6. **Yorumlar (Reviews)**
-   - Müşteri yorumlarını şık bir biçimde sunar.
+6. **Reviews**
+   - Presents customer testimonials in a visually appealing layout.
   
-7. **İletişim (Contact)**
-   - İletişim bilgileri, kullanıcıların randevu alabileceği bir form ve google maps haritası gösterilir.
+7. **Contact**
+   - Includes contact information, a booking form, and an embedded Google Maps location.
 
-## Nasıl Kullanılır?
+## How to Use?
 
-1. Projeyi klonlayın ya da dosyaları indirin.
-2. Proje dizininde terminal açarak `npm install` komutunu çalıştırın.
-3. `npm run` dev komutunu kullanarak projeyi başlatın.
-4. Tarayıcınızda `http://localhost:5173` adresine gidin.
+1. Clone the project or download the files.
+2. Open a terminal in the project directory and run npm install.
+3. Start the development server with npm run dev.
+4. Visit http://localhost:5173 in your browser.
 
 
-## Kullanulan Teknolojiler / Kütüphaneler
+## Technologies / Libraries Used
 - **React**
 - **Vite**
 - **HTML5**
