@@ -7,7 +7,7 @@ The App.css file has been restructured, and all CSS files are imported through i
 ## Live Demo
 
 Click here to view the live version of the project.
-[buraya tıklayın](https://reactive-sportcenter.netlify.app).
+[link here](https://reactive-sportcenter.netlify.app).
 
 ## Features
 
